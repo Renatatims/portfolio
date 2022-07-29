@@ -1,18 +1,61 @@
 body {
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  color: #e6a1ac;
- font-size: 30px;
+ font-size: 20px;
  text-align: center;
  background-color: #645b5b;
  
 }
 
+
+
 header {
     color:#dfe5eb;
+    background-color: #3d3b3b;
+    height:400px;
+    
 }
 
 nav {
-   text-align:right; 
+    text-align:right; 
+    
+ }
+
+
+
+#projects {
+    background-color:#645b5b;
 }
+
+.card {
+    position:relative;
+    width: 100%;
+    padding:10px;
+    background-color:white;
+    
+}
+
+.image {
+    width:370px;
+    height:250px;
+   
+}
+
+#projects ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+        
+ }
+
+ #Resume {
+    background-color: #dfe5eb;
+ }
+
+ #contact {
+    background-color: #3d3b3b;
+    
+ }
+
 
 
