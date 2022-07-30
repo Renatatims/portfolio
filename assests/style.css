@@ -3,10 +3,10 @@ body {
  color: #e6a1ac;
  font-size: 20px;
  text-align: center;
- background-color: #645b5b;
+ background-color: #574f4f;
+ padding: 0px;
  
 }
-
 
 
 header {
@@ -14,24 +14,69 @@ header {
     background-color: #3d3b3b;
     height:400px;
     
+    
 }
 
-nav {
-    text-align:right; 
+.navigation {
+    overflow:hidden;
+       
+ }
+
+ .navigation a {
+    float:left;
+    color:#e6a1ac;
+    padding:12px 15px;
+    text-decoration:none;
     
  }
 
+ .dropdown {
+    float: left;
+    overflow: hidden;
+ }
+
+.dropdown .dropbtn{
+    border: none;
+    font-size: inherit;
+    padding: 12px 15px;
+    background-color: inherit;
+    font-family: inherit;
+    color:#e6a1ac;
+ }
+
+.navigation a:hover, .dropdown:hover .dropbtn {
+    background-color:#645b5b;
+ }
+
+.dropdown-content {
+    display:none;
+      
+ }
+
+.dropdown-content a:hover {
+    background-color:#645b5b;
+ }
+
+.dropdown:hover .dropdown-content{
+    display:block;
+ }
+
+.dropdown-content a{
+    float: none;
+    color:#e6a1ac;
+    display:block;
+ }
 
 
 #projects {
-    background-color:#645b5b;
+    background-color:#574f4f;
 }
 
 .card {
     position:relative;
     width: 100%;
     padding:10px;
-    background-color:white;
+    background-color:#645b5b;
     
 }
 
@@ -49,12 +94,20 @@ nav {
  }
 
  #Resume {
-    background-color: #dfe5eb;
+    background-color:#645b5b;
+    color:#dfe5eb;
+    
  }
 
  #contact {
-    background-color: #3d3b3b;
+    background-color:#645b5b;
+    color:#dfe5eb;
     
+ }
+ 
+ footer {
+    font-size: 14px;
+    color:#dfe5eb;
  }
 
 
