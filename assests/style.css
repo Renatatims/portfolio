@@ -80,18 +80,50 @@ header {
     
 }
 
-.image {
-    width:370px;
-    height:250px;
-   
-}
-
 #projects ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
         
  }
+
+
+.card {
+    position:relative;
+    width:100%;
+}
+
+.image {
+    display: block;
+    width:370px;
+    height:250px;
+    
+}
+
+.overlay-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100%;
+    width: 100%;
+    opacity:0;
+    transition: 1s ease;
+    background-color:#3d3b3b;
+}
+
+.card:hover .overlay-card{
+    opacity: 1;
+}
+
+.overlay-text {
+    color:#e6a1ac;
+    position:absolute;
+    top:40%;
+    left:40%;
+    text-align:center;
+}
 
  #Resume {
     background-color:#645b5b;
