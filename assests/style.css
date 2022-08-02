@@ -1,3 +1,5 @@
+/*Body*/
+
 body {
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  color: #e6a1ac;
@@ -8,6 +10,8 @@ body {
  
 }
 
+/*Header*/
+
 
 header {
     color:#dfe5eb;
@@ -16,6 +20,18 @@ header {
     
     
 }
+
+#profilepic {
+    width:200px;
+    height:220px;
+    display:inline-block;
+    position: relative;
+    justify-content: right;
+
+    
+}
+
+/*Navigation*/
 
 .navigation {
     overflow:hidden;
@@ -67,6 +83,8 @@ header {
     display:block;
  }
 
+/*Section:projects*/ 
+
 
 #projects {
     background-color:#574f4f;
@@ -75,7 +93,7 @@ header {
 .card {
     position:relative;
     width: 100%;
-    padding:10px;
+    padding:0px 0px 0px 10px;
     background-color:#645b5b;
     
 }
@@ -86,12 +104,6 @@ header {
     justify-content: space-around;
         
  }
-
-
-.card {
-    position:relative;
-    width:100%;
-}
 
 .image {
     display: block;
@@ -109,7 +121,7 @@ header {
     height:100%;
     width: 100%;
     opacity:0;
-    transition: 1s ease;
+    transition: 0.5s ease;
     background-color:#3d3b3b;
 }
 
@@ -123,6 +135,11 @@ header {
     top:40%;
     left:40%;
     text-align:center;
+}
+
+.card-content {
+    
+    background-color:#645b5b;
 }
 
  #Resume {
@@ -142,5 +159,41 @@ header {
     color:#dfe5eb;
  }
 
+
+ @media all and (max-width:1140px) {
+    
+   
+    .card {
+        display:block;
+        width:fit-content;
+        margin: auto;
+        padding:0px;
+        
+          
+        
+    }
+    
+   #projects ul {
+        display: block;
+        padding:0px;
+  
+                 
+     }
+    
+    
+    .image {
+        display: block;
+        
+       
+
+        
+    }
+
+    .card-content{
+        display:block;
+        margin:auto;
+    }
+   
+}
 
 
