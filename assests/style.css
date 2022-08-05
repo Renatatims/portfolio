@@ -12,7 +12,6 @@ body {
 
 /*Header*/
 
-
 header {
     color:#dfe5eb;
     background-color: #3d3b3b;
@@ -21,14 +20,15 @@ header {
     
 }
 
+.h1grid{
+    position:relative;
+
+}
+
 #profilepic {
     width:200px;
-    height:220px;
-    display:inline-block;
-    position: relative;
-    justify-content: right;
-
-    
+    height:220px; 
+   
 }
 
 /*Navigation*/
@@ -46,7 +46,8 @@ header {
     
  }
 
- .dropdown {
+
+.dropdown {
     float: left;
     overflow: hidden;
  }
@@ -60,7 +61,7 @@ header {
     color:#e6a1ac;
  }
 
-.navigation a:hover, .dropdown:hover .dropbtn {
+ .navigation a:hover, .dropdown:hover .dropbtn {
     background-color:#645b5b;
  }
 
@@ -69,19 +70,16 @@ header {
       
  }
 
-.dropdown-content a:hover {
-    background-color:#645b5b;
- }
 
-.dropdown:hover .dropdown-content{
-    display:block;
- }
+/*Section - About me*/
 
-.dropdown-content a{
-    float: none;
-    color:#e6a1ac;
-    display:block;
- }
+#aboutme {
+    display:flex;
+    flex-direction: column;
+    position:relative;
+     
+
+}
 
 /*Section:projects*/ 
 
@@ -93,10 +91,11 @@ header {
 .card {
     position:relative;
     width: 100%;
-    padding:0px 0px 0px 10px;
+    padding:20px 10px ;
     background-color:#645b5b;
     
 }
+
 
 #projects ul {
     list-style: none;
@@ -109,6 +108,7 @@ header {
     display: block;
     width:370px;
     height:250px;
+    margin:auto;
     
 }
 
@@ -140,7 +140,14 @@ header {
 .card-content {
     
     background-color:#645b5b;
+    width:100%;
+    
 }
+
+
+/*end of Projects*/
+
+
 
  #Resume {
     background-color:#645b5b;
@@ -151,7 +158,8 @@ header {
  #contact {
     background-color:#645b5b;
     color:#dfe5eb;
-    
+     
+ 
  }
  
  footer {
@@ -160,16 +168,16 @@ header {
  }
 
 
+
+
  @media all and (max-width:1140px) {
     
    
     .card {
-        display:block;
         width:fit-content;
         margin: auto;
         padding:0px;
-        
-          
+             
         
     }
     
@@ -181,19 +189,48 @@ header {
      }
     
     
-    .image {
-        display: block;
-        
-       
-
-        
-    }
-
     .card-content{
         display:block;
         margin:auto;
     }
    
+ }
+
+
+ @media all and (max-width:500px) {
+
+ }
+
+
+/*Navigation*/
+
+@media all and (min-width:1200px) {
+
+.h1grid{
+    z-index:0;
 }
 
+
+.dropdown-content a:hover {
+    background-color:#645b5b;
+ }
+
+.dropdown:hover .dropdown-content{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    z-index:1;
+    
+ }
+
+.dropdown-content a{
+    float: none;
+    color:#e6a1ac;
+    display:block;
+ }
+
+
+/*End of Navigation*/ 
+
+ }
 
