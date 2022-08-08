@@ -55,7 +55,6 @@ header {
 .dropdown .dropbtn{
     border: none;
     font-size: inherit;
-    padding: 12px 15px;
     background-color: inherit;
     font-family: inherit;
     color:#e6a1ac;
@@ -137,12 +136,15 @@ header {
     text-align:center;
 }
 
+
 .card-content {
-    
     background-color:#645b5b;
-    width:100%;
+    width:105%;
     
 }
+
+
+
 
 
 /*end of Projects*/
@@ -196,10 +198,6 @@ header {
    
  }
 
-
- @media all and (max-width:500px) {
-
- }
 
 
 /*Navigation*/
