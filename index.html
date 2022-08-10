@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assests/style.css">
-	<link rel="icon" type="image/x-icon" href="./assests/favicon.ico">
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 	<title>Portfolio Renata</title>
 </head>
 
 <body>
 	<!--Header-->
-	<header id="header" class="grid">
-		<nav class="navigation">
-			<a href="#home">home</a>
+	<header>
+		<nav class="navigation" id="nav">
+			<a href="#nav">home</a>
 			<a href="#contact">contact</a>
 			<a href="#aboutme">about me </a>
 			<div class="dropdown">
@@ -31,10 +31,10 @@
 			</div>
 		</nav>
 
-		<div class="h1grid">
-			<h1 id="header-h1"> Hello, I am Renata Rondon </h1>
+		<div class="headerH1">
+			<h1> Hello, I am Renata Rondon </h1>
 			<p> Future <span id="web"><strong> Web Developer </strong> </span> </p>
-			<img id="profilepic" src="./assests/Profile.png">
+			<img id="profilepic" src="./assets/Profile.png">
 		</div>
 
 	</header>
@@ -44,7 +44,7 @@
 
 		<!--Section About Me-->
 
-		<section id="aboutme" class="grid">
+		<section id="aboutme" class="section">
 			<h2> About me </h2>
 			<p>Web Developer - curently enrolled at UC Berkeley Coding Bootcamp.</p>
 			<p>Background in Environmental Engineering and 4 years work experience as a Purchasing Manager.</p>
@@ -52,26 +52,30 @@
 
 		<!--Section Projects-->
 
-		<section id="projects" class="grid">
+		<section id="projects" class="section">
 			
-			<div class="card-content">
+			<div class="featured-project">
 				<h2> Featured Project </h2>
-				<h3> Code - Refactoring: Web accessibility </h3>
 			</div>
 
 			<div id="project1">
-				<div class="card" id="card1">
+				<div id="card1" class="card">
 					<img id="image1" src="https://images.prismic.io/audioeye-web/ed6b3217-53b9-461e-9e2f-16892fd543f4_what-is-digital-accessibility01.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&w=1160&h=609" alt="web accessibility icons ">
 					<div class="overlay-card" >
 						<a id="overlay-text1" href="https://renatatims.github.io/code_refactor/" target="_blank">Project 1</a>
 					</div>
-				</div>			
+				</div>	
+				<div class="card-content">
+					<h2>Project 1 </h2>
+					<p> Code - Refactoring: Web accessibility </p>
+				</div>
+				
 			</div>
 
-			<ul>				
+			<ul id="projects-ul">				
 				<li>
 					<div id="project2" class="card">
-						<img class="image" src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
+						<img class="image" src=./assets/Capture2.PNG alt="image">
 						<div class="overlay-card">
 							<a class="overlay-text" href="https://github.com/Renatatims" target="_blank">Project 2</a>
 						</div>
@@ -84,7 +88,7 @@
 
 				<li>
 					<div id="project3" class="card">
-						<img class="image" src="https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
+						<img class="image" src=https://images.pexels.com/photos/2882630/pexels-photo-2882630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="image">
 						<div class="overlay-card">
 							<a class="overlay-text" href="https://github.com/Renatatims" target="_blank">Project 3</a>
 						</div>
@@ -105,21 +109,21 @@
 					</div>
 					<div class="card-content">
 						<h2>Project 4</h2>
-					<p> API</p>
+					<p> Web APIs</p>
 					</div>
 					
 				</li>
 
 				<li>
 					<div id="project5" class="card">
-						<img class="image" src="https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
+						<img class="image" src="https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
 						<div class="overlay-card">
 							<a class="overlay-text" href="https://github.com/Renatatims" target="_blank">Project 5</a>
 						</div>
 					</div>
 					<div class="card-content">
 						<h2>Project 5</h2>
-					<p> API</p>
+					<p> Third-Party APIs</p>
 					</div>
 					
 				</li>
@@ -127,35 +131,30 @@
 			</ul>
 		</section>
 
-		
-
-		<!--Section Resume
-
-		<section id="Resume" class="grid">
-			<h2>Resume</h2>
-			<p> Link to Resume </p>
-		</section>
-
-		-->
-
-		<!--Section Contact-->
-
-		<section id="contact" class="grid">
-			<h2 id="contact-name">Renata Rondon </h2>
+		<section id="contact" class="section">
+			<h2 id="contact-name"> <a href="#nav"> Renata Rondon </a> </h2>
 			<div id="contact-line">
 
 			</div>
 
-			<h3>Contact</h3>
+			<h3>Contact me:</h3>
 			<ul class="contact-icons">
 				<li class="icons"> 
-					<a href="https://github.com/Renatatims" target="_blank"> <img src="./assests/icons/email__icon.png"> </a>
+					<a> <img src="./assets/icons/phone_icon.png"> </a>
+					<p>000-XXX-XXXX</p>
+				</li>
+				<li class="icons"> 
+					<a href="https://github.com/Renatatims" target="_blank"> <img src="./assets/icons/email_icon.png"> </a>
+					<p>XXX@gmail.com</p>
+					
 				</li>
 				<li class="icons">
-					<a href="https://github.com/Renatatims" target="_blank"> <img src="./assests/icons/github_icon.png"> </a>
+					<a href="https://github.com/Renatatims" target="_blank"> <img src="./assets/icons/github_icon.png"> </a>
+					
 				</li>
 				<li class="icons">
-					<a href="https://www.linkedin.com/"  target="_blank"> <img src="./assests/icons/linkedin.png"> </a>
+					<a href="https://www.linkedin.com/"  target="_blank"> <img src="./assets/icons/linkedin.png"> </a>
+					
 				</li>
 			</ul>
 										
@@ -165,7 +164,7 @@
 
 	<!--Footer-->
 
-	<footer id="footer" class="grid">
+	<footer id="footer">
 		<h3> © Renata Rondon 2022 </h3>
 	</footer>
 
