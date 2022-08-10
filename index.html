@@ -22,19 +22,20 @@
 					<i class="down"></i>
 				</button>
 				<div class="dropdown-content">
-					<a href="#project1">Project1</a>
-					<a href="#project2">Project2</a>
-					<a href="#project3">Project3</a>
+					<a href="#project1">Project 1</a>
+					<a href="#project2">Project 2</a>
+					<a href="#project3">Project 3</a>
+					<a href="#project4">Project 4</a>
+					<a href="#project5">Project 5</a>
 				</div>
 			</div>
 		</nav>
-	<div class="h1grid">
 
-	<h1 id="header-h1"> Hello, I am Renata Rondon </h1>
-	<p> Future <span id="web"><strong> Web Developer </strong> </span> </p>
-	<img id="profilepic" src="./assests/Profile.png">
-	
-	</div>
+		<div class="h1grid">
+			<h1 id="header-h1"> Hello, I am Renata Rondon </h1>
+			<p> Future <span id="web"><strong> Web Developer </strong> </span> </p>
+			<img id="profilepic" src="./assests/Profile.png">
+		</div>
 
 	</header>
 	
@@ -52,18 +53,19 @@
 		<!--Section Projects-->
 
 		<section id="projects" class="grid">
-			<div id="project1">
-				<div class="card">
-					<img class="image" src="https://images.prismic.io/audioeye-web/ed6b3217-53b9-461e-9e2f-16892fd543f4_what-is-digital-accessibility01.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&w=1160&h=609" alt="web accessibility icons ">
-					<div class="overlay-card">
-						<a class="overlay-text" href="https://renatatims.github.io/code_refactor/" target="_blank">Project 1</a>
-					</div>
-				</div>
-				<div class="card-content">
-					<h2> Project 1 </h2>
-					<p> Web accessibility</p>
-				</div>
+			
+			<div class="card-content">
+				<h2> Featured Project </h2>
+				<h3> Code - Refactoring: Web accessibility </h3>
+			</div>
 
+			<div id="project1">
+				<div class="card" id="card1">
+					<img id="image1" src="https://images.prismic.io/audioeye-web/ed6b3217-53b9-461e-9e2f-16892fd543f4_what-is-digital-accessibility01.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&w=1160&h=609" alt="web accessibility icons ">
+					<div class="overlay-card" >
+						<a id="overlay-text1" href="https://renatatims.github.io/code_refactor/" target="_blank">Project 1</a>
+					</div>
+				</div>			
 			</div>
 
 			<ul>				
@@ -95,7 +97,7 @@
 				</li>
 
 				<li>
-					<div id="project3" class="card">
+					<div id="project4" class="card">
 						<img class="image" src="https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
 						<div class="overlay-card">
 							<a class="overlay-text" href="https://github.com/Renatatims" target="_blank">Project 4</a>
@@ -108,24 +110,55 @@
 					
 				</li>
 
+				<li>
+					<div id="project5" class="card">
+						<img class="image" src="https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image">
+						<div class="overlay-card">
+							<a class="overlay-text" href="https://github.com/Renatatims" target="_blank">Project 5</a>
+						</div>
+					</div>
+					<div class="card-content">
+						<h2>Project 5</h2>
+					<p> API</p>
+					</div>
+					
+				</li>
+
 			</ul>
 		</section>
 
-		<!--Section Resume-->
+		
+
+		<!--Section Resume
 
 		<section id="Resume" class="grid">
 			<h2>Resume</h2>
 			<p> Link to Resume </p>
 		</section>
 
+		-->
+
 		<!--Section Contact-->
 
 		<section id="contact" class="grid">
-			<h2>Contact</h2>
-			<p>E-mail: XXX@gmail.com </p>
-			<p>GitHub:<a href="https://github.com/Renatatims" target="_blank"> Renata GitHub</a></p>
-			<p>Linkedin:<a href="https://www.linkedin.com/" target="_blank"> Renata Linkedin</a></p>
-								
+			<h2 id="contact-name">Renata Rondon </h2>
+			<div id="contact-line">
+
+			</div>
+
+			<h3>Contact</h3>
+			<ul class="contact-icons">
+				<li class="icons"> 
+					<a href="https://github.com/Renatatims" target="_blank"> <img src="./assests/icons/email__icon.png"> </a>
+				</li>
+				<li class="icons">
+					<a href="https://github.com/Renatatims" target="_blank"> <img src="./assests/icons/github_icon.png"> </a>
+				</li>
+				<li class="icons">
+					<a href="https://www.linkedin.com/"  target="_blank"> <img src="./assests/icons/linkedin.png"> </a>
+				</li>
+			</ul>
+										
 		</section>
 						
 	</main>
@@ -133,7 +166,7 @@
 	<!--Footer-->
 
 	<footer id="footer" class="grid">
-		<h3> Renata Rondon @2022 </h3>
+		<h3> © Renata Rondon 2022 </h3>
 	</footer>
 
 </body>
