@@ -26,7 +26,8 @@ body {
 header {
     color: var(--white);
     background-color: var(--darkgrey);
-    height:400px;   
+    height:400px;
+      
     
 }
 
@@ -365,6 +366,16 @@ footer {
        
     }
    
+ }
+
+
+ @media all and (max-width:576px) {
+   
+    .navigation a {
+        padding:7px; 
+        
+    }
+
  }
 
 /*end of @media max-width:768px*/
