@@ -1,8 +1,6 @@
-# portfolio
+# Portfolio
 
-# Hello I am Renata Rondon
-
-Please open my portfolio at: so you can have access to more info and projects.
+# Hello, I am Renata Rondon!
 
 
 ## Highlights
@@ -15,7 +13,7 @@ Please open my portfolio at: so you can have access to more info and projects.
 ## Skills
  - Html
  - Css
- - Java
+ - JavaScript
  - R 
 
 ## Projects
@@ -27,7 +25,7 @@ Please open my portfolio at: so you can have access to more info and projects.
 - Project 5: Third Party APIs
 
 
- ## Contact Info
+## Contact Info
 
  - e-mail: XXX@gmail.com
  - GitHub: https://github.com/
@@ -35,6 +33,21 @@ Please open my portfolio at: so you can have access to more info and projects.
  - Phone number: 000-000-0000
  - Location: USA
 
- Portfolio Preview:
+## Portfolio Preview:
 
- 
+ ![preview](.\assets\screenshots\preview.PNG "Preview Portfolio")
+
+## Features:
+
+- Drop-down menu on screens bigger than 1200px:
+
+![preview](.\assets\screenshots\drop-down-menu.gif "Preview Portfolio")
+
+- Overlay Project's images with link to projects
+![preview](.\assets\screenshots\image-overlay-link.gif "Overlay link")
+
+
+
+### For more info please follow the Link:
+
+
