@@ -1,21 +1,31 @@
+/*Root tag*/
+
+:root {
+    --pink: #e6a1ac;
+    --darkgrey:#3d3b3b;
+    --lightgrey:#574f4f;
+    --lightergrey:#645b5b;
+    --white:#dfe5eb;
+}
+
 /*Body*/
 
 body {
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- color: #e6a1ac;
+ color: var(--pink);
  font-size: 20px;
  text-align: center;
- background-color: #574f4f;
+ background-color:  var(--lightgrey);
  padding: 0px;
- margin:0px;
+ margin: 0px;
  
 }
 
 /*Header*/
 
 header {
-    color:#dfe5eb;
-    background-color: #3d3b3b;
+    color: var(--white);
+    background-color: var(--darkgrey);
     height:400px;   
     
 }
@@ -30,7 +40,7 @@ header {
 
  .navigation a {
     float:left;
-    color:#e6a1ac;
+    color: var(--pink);
     padding:12px 15px;
     text-decoration:none;
     
@@ -46,16 +56,16 @@ header {
     font-size: inherit;
     background-color: inherit;
     font-family: inherit;
-    color:#e6a1ac;
+    color: var(--pink);
 }
 
- .navigation a:hover, .dropdown:hover .dropbtn {
-    background-color:#645b5b;
+.navigation a:hover, .dropdown:hover .dropbtn {
+    background-color:var(--lightergrey);
 }
 
 .dropdown-content {
     display:none;
-      
+         
 }
 
  /*end of Navigation*/
@@ -87,36 +97,39 @@ header {
 }
 
 #aboutme p {
-    color:#dfe5eb;
+    color: var(--white);
 }
+
+/*end of Section About me*/
+
 
 /*Section:projects*/ 
 
 
 #projects {
-    background-color:#574f4f;
+    background-color: var(--lightgrey);
+    margin:0px;
 }
 
 .featured-project {
-    background-color:#3d3b3b;
+    background-color: var(--darkgrey);
 }
 
 .card {
     position:relative;
-    width: 100%;
-    padding:20px 10px;
-    background-color:#645b5b;
+    width: auto;
+    padding:20px;
+    background-color:var(--lightergrey);
         
 }
-
 
 #projects-ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    
-        
- }
+    margin-left: -40px;        
+}
+
 
 .image {
     width:370px;
@@ -134,7 +147,7 @@ header {
     width: 100%;
     opacity:0;
     transition: 0.5s ease;
-    background-color:#3d3b3b;
+    background-color: var(--darkgrey);
   
 }
 
@@ -142,27 +155,31 @@ header {
     opacity: 0.9;
 }
 
+#overlay-text1 {
+    color: var(--pink);
+    position:absolute;
+    top: 48%;
+    left: 48%;
+    text-align:center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
 .overlay-text {
-    color:#e6a1ac;
+    color: var(--pink);
     position:absolute;
     top:40%;
-    left:40%;
+    left:35%;
     text-align:center;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 .card-content {
-    background-color:#3d3b3b;
+    background-color: var(--darkgrey);
     margin-top: -30px;
-    width:105%;
+    width:auto;
     
-}
-
-#overlay-text1 {
-    color:#e6a1ac;
-    position:absolute;
-    top:50%;
-    left:50%;
-    text-align:center;
 }
 
 
@@ -172,8 +189,8 @@ header {
 /*Section - Contact*/
 
 #contact {
-    background-color:#645b5b;
-    color:#dfe5eb;
+    background-color:var(--lightergrey);
+    color: var(--white);
     
 }
 
@@ -186,13 +203,13 @@ header {
 
 #contact-name a{
     text-decoration: none;  
-    color:#dfe5eb;
+    color: var(--white);
 }
 
 #contact-line{
     height: 0.05rem;
     width:100%;
-    background-color:#dfe5eb;
+    background-color: var(--white);
 }
 
 .contact-icons{
@@ -217,15 +234,20 @@ header {
     cursor:pointer;
 }
 
+/*end of Section Contact*/
+
+
 /*Footer*/
  
 footer {
     font-size: 14px;
-    color:#dfe5eb;
+    color: var(--white);
 }
 
 
+
 /*@media queries*/ 
+
 
 /*@media min-width:1200px*/
 
@@ -234,10 +256,10 @@ footer {
 @media all and (min-width:1200px) {
 
 
-/*Navigation*/
+/*Navigation bar*/
 
 .dropdown-content a:hover {
-    background-color:#645b5b;
+    background-color:var(--lightergrey);
  }
 
 .dropdown:hover .dropdown-content{
@@ -250,66 +272,99 @@ footer {
 
 .dropdown-content a{
     float: none;
-    color:#e6a1ac;
+    color: var(--pink);
     display:block;
  }
 
 
 /*End of Navigation*/ 
 
+/*Header H1*/
 .headerH1{
     z-index:0;
 }
 							
 }
 
+/*end of *@media min-width:1200px*/
+
+
 /*@media max-width:1600px*/
 
-
-
- @media all and (max-width:1600px) {
-
-    #aboutme {
-        margin-top: 50px;      
-    }
-    
+@media all and (max-width:1600px) {
    
-    .card {
-        width:fit-content;
-        margin: auto;
-        padding:0px;
-             
-        
-    }
-    
-   #projects ul {
-        display: block;
-        padding:0px;
-                   
+    #projects-ul {
+        list-style: none;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content:space-around;       
      }
     
-    
-    .card-content{
-        display:block;
-        margin:auto;
+    #projects li {
+        width:35%;
+       
     }
+
+    #overlay-text1 {
+        top: 46%;
+        left: 46%;
+       
+    }
+
+  }
+
+/*end of @media max-width:1600px*/
+
+/*@media max-width:1200px*/
+
+ @media all and (max-width:1200px) {
 
     #image1{
         width:100%;
         height:auto;
     }
+    #projects li {
+        width:auto;
+       
+    }
+    
+    .icons{
+        margin-left: 18px;
+        margin-right: 18px;
+        justify-items: center;
+      }
 
     #overlay-text1 {
-        top:40%;
-        left:40%;
-        text-align:center;
+        top: 43%;
+        left: 43%;
+       
     }
+ }
 
+/* end of @media max-width:1200px*/
 
+/*@media max-width:768px*/
+    
+
+ @media all and (max-width:768px) {
+
+    #aboutme {
+        margin-top: 50px;      
+    }
+  
     .icons{
         margin-left: 10px;
         margin-right: 10px;
         justify-items: center;
       }
+
+     #overlay-text1 {
+        top: 40%;
+        left: 40%;
+       
+    }
    
  }
+
+/*end of @media max-width:768px*/
