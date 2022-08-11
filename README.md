@@ -41,7 +41,7 @@
 
 - Drop-down menu on screens bigger than 1200px:
 
-![preview](.\assets\screenshots\drop-down-menu.gif "Preview Portfolio")
+![preview](.\assets\screenshots\drop-down-menu.gif "Drop-down-link")
 
 - Overlay Project's images with link to projects
 ![preview](.\assets\screenshots\image-overlay-link.gif "Overlay link")
