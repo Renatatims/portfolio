@@ -35,19 +35,19 @@
 
 ## Portfolio Preview:
 
- ![preview](.\assets\screenshots\preview.PNG "Preview Portfolio")
+ ![preview](assets/screenshots/preview.PNG "Preview Portfolio")
 
 ## Features:
 
-- Drop-down menu on screens bigger than 1200px:
+- Drop-down menu on screens bigger than 1200px :
 
-![preview](.\assets\screenshots\drop-down-menu.gif "Drop-down-link")
+![preview](assets/screenshots/drop-down-menu.gif "Drop-down-link")
 
-- Overlay Project's images with link to projects
-![preview](.\assets\screenshots\image-overlay-link.gif "Overlay link")
+- Overlay Project's images with link to projects :
+![preview](assets/screenshots/image-overlay-link.gif "Overlay link")
 
 
 
-### For more info please follow the Link:
+### For more info please follow the Link :
 
 
